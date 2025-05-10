@@ -1,93 +1,119 @@
 <html>
-    <head>
-        <title>Halaman Biodata Sederhana</title>
-    </head>
-        <style>
-            
-        body {
-            background-color: #f0f8ff; /* Ganti warna background */
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-        }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Biodata Sederhana</title>
+    <style>
+      .body-style {
+        background-color: #f0f8ff;
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+      }
 
-        h1 {
-            font-size: 36px; /* Ukuran teks judul */
-            color: #2c3e50;
-        }
+      .heading {
+        font-size: 36px;
+        color: #2c3e50;
+      }
 
-        p {
-            font-size: 18px; /* Ukuran teks paragraf */
-            color: #34495e;
-        }
+      .text {
+        font-size: 18px;
+        color: #34495e;
+      }
 
-        .biodata-container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: auto;
-        }
+      .biodata-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: auto;
+      }
 
-        img {
-            width: 150px;
-            border: 3px solid #2980b9; /* Border pada foto */
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
+      .photo {
+        width: 150px;
+        border: 3px solid #2980b9;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
 
-        form {
-            margin-top: 30px;
-            padding: 20px;
-            border: 2px solid #bdc3c7; /* Border pada form */
-            border-radius: 8px;
-            background-color: #ecf0f1;
-        }
+      .form-style {
+        margin-top: 30px;
+        padding: 20px;
+        border: 2px solid #bdc3c7;
+        border-radius: 8px;
+        background-color: #ecf0f1;
+      }
 
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
+      .input-style,
+      .textarea-style {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
 
-        label {
-            font-weight: bold;
-        }
+      .label-style {
+        font-weight: bold;
+      }
 
-        button {
-            background-color: #2980b9;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+      .button-style {
+        background-color: #2980b9;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
 
-        button:hover {
-            background-color: #3498db;
+      .button-style:hover {
+        background-color: #3498db;
+      }
+
+      @media (max-width: 768px) {
+        .body-style {
+          flex-direction: column;
         }
-        </style>
-</head>
-<body>
+      }
     </style>
-    <body>
-       <h1>Biodata Pribadi</h1> 
-       <p>Mahasiswa Semester 2 Jurusan Sistem Informasi</p>
-       <img src="WhatsApp Image 2025-04-29 at 20.15.05.jpeg" alt="Foto Saya" width="250">
-       <p>Nama: Aliya</p>
-       <p>Email: aliyaal010705@gmail.com</p>
-       <p>Telepon: 081919306561</p>
-      <p>github <a href="https://github.com/Aliyaal02/tugas-biodata-sederhana-main.git" target="_blank">https://github.com/Aliyaal02</a>
-   
-       <form >Hubungi Saya</form>
-        <label>Nama: <input type="text"></label><br />
-        <label>Email: <input type="email"></label><br />
-        <label>telpon: <input type="namber"></label>
-        <button type="submit">kirim</button><br>
-       </form>
-   
-    </body>
+  </head>
+  <body class="body-style">
+    <div class="biodata-container">
+      <h1 class="heading">Biodata Pribadi</h1>
+      <p class="text">Mahasiswa Semester 2 Jurusan Sistem Informasi</p>
+      <img
+        src="WhatsApp Image 2025-04-29 at 20.15.05.jpeg"
+        alt="Foto Saya"
+        class="photo"
+      />
+      <p class="text">Nama: Aliya</p>
+      <p class="text">Email: aliyaal010705@gmail.com</p>
+      <p class="text">Telepon: 081919306561</p>
+      <p class="text">
+        GitHub:
+        <a
+          href="https://github.com/Aliyaal02/tugas-biodata-sederhana-main.git"
+          target="_blank"
+        >https://github.com/Aliyaal02</a>
+      </p>
+    </div>
+
+    <div class="biodata-container">
+      <form class="form-style">
+        <p class="label-style">Hubungi Saya</p>
+        <label class="label-style">Nama:
+          <input type="text" class="input-style" />
+        </label><br />
+        <label class="label-style">Email:
+          <input type="email" class="input-style" />
+        </label><br />
+        <label class="label-style">Telepon:
+          <input type="text" class="input-style" />
+        </label><br />
+        <button type="submit" class="button-style">Kirim</button>
+      </form>
+    </div>
+  </body>
 </html>
